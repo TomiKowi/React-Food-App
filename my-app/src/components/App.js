@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './Header';
+import Navigation from './Navigation';
+import Result from './Result';
 import '../styles/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello Again React!</h1>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <div className="header">
+            {<Header />}
+          </div>
+          <div className="mainContainer">
+            {<Navigation />}
+            {<Result />}
+          </div>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
