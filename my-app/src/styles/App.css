@@ -5,17 +5,16 @@
 }
 
 div.App {
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 div.mainContainer {
-  background-color: blue;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-grow: 7;
 }
 
