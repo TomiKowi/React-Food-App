@@ -7,6 +7,7 @@ import FavoritesPage from '../pages/FavoritesPage';
 import '../styles/Result.css';
 
 const Result = () => {
+
     return (
         <>
             <Route path="/" exact component={HomePage} />
