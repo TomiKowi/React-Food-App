@@ -1,3 +1,4 @@
-div.header {
-    background-color: cornflowerblue;
+.header h1 {
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
 }
