@@ -1,0 +1,71 @@
+.drinksContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchDrink {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchDrink button {
+    padding: 10px 20px;
+    background-color: gray;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.myDrink {
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drinkTitle {
+    flex-basis: 10%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drinkTitle p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.drinkContainer {
+    display: flex;
+    flex-basis: 60%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.drinkContainer .drinkRecipe {
+    padding: 20px;
+    text-align: justify;
+}
+
+.drinkContainer .drinkImage {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.drinkContainer .drinkImage img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
