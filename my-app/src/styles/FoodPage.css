@@ -48,10 +48,11 @@
     display: flex;
     flex-basis: 60%;
     width: 100%;
+    overflow: scroll;
 }
 
 .mealContainer .mealRecipe {
-    padding: 30px 30px 30px 10px;
+    padding: 20px;
     text-align: justify;
 }
 
