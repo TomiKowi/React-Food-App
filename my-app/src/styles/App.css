@@ -13,15 +13,12 @@ div.App {
   font-family: 'Open Sans', sans-serif;
 }
 
+div.header {
+  display: flex;
+  height: 15vh;
+}
+
 div.mainContainer {
   display: flex;
   flex-grow: 7;
-}
-
-div.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  background-color: gainsboro;
 }

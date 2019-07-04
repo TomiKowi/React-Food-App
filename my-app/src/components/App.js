@@ -13,9 +13,9 @@ class App extends Component {
         <div className="App">
           <div className="header">
             {<Header />}
+            {<Navigation />}
           </div>
           <div className="mainContainer">
-            {<Navigation />}
             {<Result />}
           </div>
         </div>

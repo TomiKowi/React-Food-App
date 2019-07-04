@@ -1,16 +1,13 @@
 .navigation {
+    flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 30px;
-    min-width: 20%;
-    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navigation ul {
-    flex-basis: 40vh;
+    padding-right: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     list-style: none;
 }
@@ -26,10 +23,10 @@
 }
 
 .navigation ul li a:hover {
-    transform: translateX(10px);
+    transform: translateY(10px);
 }
 
 .navigation ul li a.active {
-    border-left: 8px solid gray;
-    transform: translateX(0px);
+    border-bottom: 5px solid gray;
+    transform: translateY(0px);
 }

@@ -1,4 +1,13 @@
-.header h1 {
-    font-size: 60px;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+
+.logo h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
     font-family: 'Indie Flower', cursive;
 }
