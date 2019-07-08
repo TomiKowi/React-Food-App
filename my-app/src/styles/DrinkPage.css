@@ -13,6 +13,18 @@
     background-color: gainsboro;
 }
 
+.searchDrink form {
+    border: 1px solid black;
+}
+
+.searchDrink form input {
+    width: 150px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 15px;
+    outline: none;
+}
+
 .searchDrink button {
     padding: 10px 20px;
     letter-spacing: 1px;
