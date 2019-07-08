@@ -32,24 +32,29 @@ class DrinkPage extends Component {
 
     handleSearchDrink = (e) => {
         e.preventDefault()
-        const API = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.state.value}`
-        const index = 0;
 
-        fetch(API)
-            .then(response => {
-                if (response.ok) { return response }
-                throw Error("Ups, something went wrong")
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                this.setState(state => ({
-                    title: data.drinks[index].strDrink,
-                    image: data.drinks[index].strDrinkThumb,
-                    recipe: data.drinks[index].strInstructions,
-                }))
-            })
+        if (this.state.value === "") { alert("If you want search enter name or search random!") }
+        else {
+            const API = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.state.value}`
+            const index = 0;
+
+            fetch(API)
+                .then(response => {
+                    if (response.ok) { return response }
+                    throw Error("Ups, something went wrong")
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    this.setState(state => ({
+                        title: data.drinks[index].strDrink,
+                        image: data.drinks[index].strDrinkThumb,
+                        recipe: data.drinks[index].strInstructions,
+                    }))
+                })
+        }
     }
+
 
     handleSearchByNameChange = (e) => {
         this.setState({
