@@ -15,10 +15,10 @@ div.App {
 
 div.header {
   display: flex;
-  height: 15vh;
+  height: 10vh;
 }
 
 div.mainContainer {
   display: flex;
-  flex-grow: 7;
+  height: 90vh;
 }
