@@ -1,8 +1,9 @@
 .foodContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 10px;
     width: 100%;
+    height: 100%;
 }
 
 .searchMeal {
@@ -21,11 +22,11 @@
     font-size: 16px;
     text-transform: uppercase;
     background-color: inherit;
-    border: none;
+    border: 1px solid black;
 }
 
 .myMeal {
-    flex-basis: 90%;
+    flex-basis: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,10 +34,11 @@
 
 .mealTitle {
     flex-basis: 10%;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .mealTitle p {
@@ -49,25 +51,24 @@
 
 .mealContainer {
     display: flex;
-    flex-basis: 60%;
+    flex-direction: column;
     width: 90%;
+}
+
+.mealRecipe {
+    flex-basis: 60%;
+    padding: 20px;
+    text-align: justify;
     overflow: scroll;
 }
 
-.mealContainer .mealRecipe {
-    padding: 20px;
-    text-align: justify;
-}
-
-.mealContainer .mealImage {
-    flex-basis: 60%;
+.mealImage {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.mealContainer .mealImage img {
+.mealImage img {
     width: 300px;
     height: 300px;
     overflow: hidden;
