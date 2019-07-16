@@ -6,7 +6,6 @@ const navList = [
     { name: "Home", path: "/", exact: true },
     { name: "Food", path: "/Food" },
     { name: "Drink", path: "/Drink" },
-    { name: "Favorites", path: "/Favorites" },
 ]
 
 const Navigation = () => {
