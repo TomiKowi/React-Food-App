@@ -8,6 +8,9 @@ class FoodPage extends Component {
         title: "",
         image: "",
         recipe: "",
+        origin: "",
+        category: "",
+        movie: "",
     }
 
     handleSearchFoodClick = () => {
@@ -26,13 +29,16 @@ class FoodPage extends Component {
                     title: data.meals[index].strMeal,
                     image: data.meals[index].strMealThumb,
                     recipe: data.meals[index].strInstructions,
+                    origin: data.meals[index].strArea,
+                    category: data.meals[index].strCategory,
+                    movie: data.meals[index].strYoutube,
                 }))
             })
     }
 
     render() {
 
-        const { title, image, recipe } = this.state
+        const { title, image, recipe, origin, category, movie } = this.state
 
         return (
             <div className="foodContainer">
@@ -44,8 +50,15 @@ class FoodPage extends Component {
                         {title ? <p>{title}</p> : null}
                     </div>
                     <div className="mealContainer">
-                        <div className="mealImage">
-                            {image ? <img src={image} alt="Food" /> : null}
+                        <div className="mealDetails">
+                            <div className="mealImage">
+                                {image ? <img src={image} alt="Food" /> : null}
+                            </div>
+                            <div className="mealIntro">
+                                {origin ? <p>Origin of dish: <span>{origin}</span></p> : null}
+                                {category ? <p>Category of dish: <span>{category}</span></p> : null}
+                                {movie ? <p>Introduction movie: <span><a href={movie} target="_blank" rel="noopener noreferrer">Click me!</a></span></p> : null}
+                            </div>
                         </div>
                         <div className="mealRecipe">
                             {recipe ? <p>{recipe}</p> : null}
