@@ -55,6 +55,31 @@
     width: 90%;
 }
 
+.mealDetails {
+    display: flex;
+}
+
+.mealIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mealIntro p {
+    margin: 20px;
+}
+
+.mealIntro p span {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.mealIntro p span a {
+    text-decoration: none;
+    color: chocolate;
+}
+
 .mealRecipe {
     flex-basis: 60%;
     padding: 20px;
