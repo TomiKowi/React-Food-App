@@ -33,7 +33,7 @@ class DrinkPage extends Component {
     handleSearchDrink = (e) => {
         e.preventDefault()
 
-        if (this.state.value === "") { alert("If you want search enter name or search random!") }
+        if (this.state.value === "") { alert("If you want search, enter name or search random!") }
         else {
             const API = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.state.value}`
             const index = 0;
@@ -45,7 +45,6 @@ class DrinkPage extends Component {
                 })
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
                     this.setState(state => ({
                         title: data.drinks[index].strDrink,
                         image: data.drinks[index].strDrinkThumb,
