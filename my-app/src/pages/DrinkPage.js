@@ -8,6 +8,9 @@ class DrinkPage extends Component {
         title: "",
         image: "",
         recipe: "",
+        category: "",
+        glass: "",
+        alcoholic: "",
     }
 
     handleSearchRandomDrink = () => {
@@ -26,6 +29,9 @@ class DrinkPage extends Component {
                     title: data.drinks[index].strDrink,
                     image: data.drinks[index].strDrinkThumb,
                     recipe: data.drinks[index].strInstructions,
+                    category: data.drinks[index].strCategory,
+                    glass: data.drinks[index].strGlass,
+                    alcoholic: data.drinks[index].strAlcoholic,
                 }))
             })
     }
@@ -49,6 +55,9 @@ class DrinkPage extends Component {
                         title: data.drinks[index].strDrink,
                         image: data.drinks[index].strDrinkThumb,
                         recipe: data.drinks[index].strInstructions,
+                        category: data.drinks[index].strCategory,
+                        glass: data.drinks[index].strGlass,
+                        alcoholic: data.drinks[index].strAlcoholic,
                     }))
                 })
         }
@@ -63,7 +72,7 @@ class DrinkPage extends Component {
 
     render() {
 
-        const { title, image, recipe } = this.state
+        const { title, image, recipe, category, glass, alcoholic } = this.state
 
         return (
             <div className="drinksContainer">
@@ -79,8 +88,15 @@ class DrinkPage extends Component {
                         {title ? <p>{title}</p> : null}
                     </div>
                     <div className="drinkContainer">
-                        <div className="drinkImage">
-                            {image ? <img src={image} alt="Food" /> : null}
+                        <div className="drinkDetails">
+                            <div className="drinkImage">
+                                {image ? <img src={image} alt="Food" /> : null}
+                            </div>
+                            <div className="drinkIntro">
+                                {category ? <p>Category: <span>{category}</span></p> : null}
+                                {glass ? <p>Recommended glass: <span>{glass}</span></p> : null}
+                                {alcoholic ? <p>Type: <span>{alcoholic}</span></p> : null}
+                            </div>
                         </div>
                         <div className="drinkRecipe">
                             {recipe ? <p>{recipe}</p> : null}
