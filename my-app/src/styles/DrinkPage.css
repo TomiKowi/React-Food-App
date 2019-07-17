@@ -1,8 +1,9 @@
 .drinksContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 10px;
     width: 100%;
+    height: 100%;
 }
 
 .searchDrink {
@@ -36,8 +37,12 @@
     border: none;
 }
 
+.searchDrink button:hover {
+    color: goldenrod;
+}
+
 .myDrink {
-    flex-basis: 90%;
+    flex-basis: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,10 +50,11 @@
 
 .drinkTitle {
     flex-basis: 10%;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .drinkTitle p {
@@ -61,25 +67,49 @@
 
 .drinkContainer {
     display: flex;
-    flex-basis: 60%;
+    flex-direction: column;
     width: 90%;
+}
+
+.drinkDetails {
+    display: flex;
+}
+
+.drinkIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.drinkIntro p {
+    margin: 20px;
+}
+
+.drinkIntro p span {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.drinkIntro p span a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+.drinkRecipe {
+    flex-basis: 60%;
+    padding: 20px;
+    text-align: justify;
     overflow: scroll;
 }
 
-.drinkContainer .drinkRecipe {
-    padding: 20px;
-    text-align: justify;
-}
-
-.drinkContainer .drinkImage {
-    flex-basis: 60%;
+.drinkImage {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.drinkContainer .drinkImage img {
+.drinkImage img {
     width: 300px;
     height: 300px;
     overflow: hidden;
