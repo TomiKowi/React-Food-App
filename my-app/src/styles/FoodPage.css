@@ -23,6 +23,12 @@
     text-transform: uppercase;
     background-color: inherit;
     border: 1px solid black;
+    transition: 0.2s ease;
+}
+
+.searchMeal button:hover {
+    color: goldenrod;
+    border: 1px solid goldenrod;
 }
 
 .myMeal {
